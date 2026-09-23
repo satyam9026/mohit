@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Trade with Arun | Official Telegram Channel</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Inter,Arial,Helvetica,sans-serif;
+    background:#f5f7fb;
+    color:#111827;
+    overflow-x:hidden;
+}
+
+/* Background */
+body::before{
+    content:"";
+    position:fixed;
+    width:500px;
+    height:500px;
+    background:rgba(34,158,217,.10);
+    filter:blur(100px);
+    border-radius:50%;
+    top:-180px;
+    left:-180px;
+    z-index:-1;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    width:450px;
+    height:450px;
+    background:rgba(37,211,102,.07);
+    filter:blur(100px);
+    border-radius:50%;
+    right:-180px;
+    bottom:-150px;
+    z-index:-1;
+}
+
+.container{
+    width:92%;
+    max-width:1080px;
+    margin:auto;
+}
+
+/* Top Bar */
+.topbar{
+    padding:18px 0;
+}
+
+.top-inner{
+    display:flex;
+    justify-content:center;
+}
+
+.live{
+    display:inline-flex;
+    align-items:center;
+    gap:9px;
+    padding:9px 18px;
+    border-radius:50px;
+    background:#fff;
+    border:1px solid #e5e7eb;
+    font-size:12px;
+    font-weight:800;
+    letter-spacing:1.2px;
+    color:#111827;
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+}
+
+.live-dot{
+    width:8px;
+    height:8px;
+    background:#22c55e;
+    border-radius:50%;
+    box-shadow:0 0 0 5px rgba(34,197,94,.12);
+}
+
+/* Hero */
+.hero{
+    text-align:center;
+    padding:42px 0 55px;
+}
+
+.telegram-logo{
+    width:92px;
+    height:92px;
+    margin:0 auto 22px;
+    border-radius:28px;
+    background:linear-gradient(145deg,#28a9e0,#168dcc);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    box-shadow:
+        0 18px 40px rgba(34,158,217,.28),
+        inset 0 1px 1px rgba(255,255,255,.3);
+    animation:float 3s ease-in-out infinite;
+}
+
+.telegram-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes float{
+    0%,100%{transform:translateY(0)}
+    50%{transform:translateY(-7px)}
+}
+
+.official{
+    display:inline-block;
+    color:#168dcc;
+    font-size:12px;
+    font-weight:800;
+    letter-spacing:1.8px;
+    margin-bottom:12px;
+}
+
+.hero h1{
+    font-size:clamp(40px,7vw,68px);
+    line-height:1.05;
+    font-weight:900;
+    letter-spacing:-2px;
+    margin-bottom:12px;
+}
+
+.hero h1 span{
+    background:linear-gradient(90deg,#168dcc,#0b6fa5);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.username{
+    font-size:15px;
+    color:#6b7280;
+    font-weight:600;
+    margin-bottom:16px;
+}
+
+.members-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.members{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:#fff;
+    border:1px solid #e5e7eb;
+    border-radius:50px;
+    padding:9px 17px;
+    font-size:13px;
+    color:#4b5563;
+    box-shadow:0 8px 25px rgba(0,0,0,.05);
+    text-decoration: none;
+}
+
+.members strong{
+    color:#111827;
+}
+
+/* Highly Highlighted & Glowing Blinking Arrow Button */
+.scroll-arrow-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    background: linear-gradient(135deg, #0088cc, #229ed9);
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: none;
+    box-shadow: 0 0 25px rgba(0, 136, 204, 0.8), 0 4px 10px rgba(0,0,0,0.15);
+    animation: superHighlightPulse 1.2s infinite ease-in-out;
+}
+
+@keyframes superHighlightPulse {
+    0% {
+        transform: translateY(0) scale(1);
+        box-shadow: 0 0 10px rgba(0, 136, 204, 0.5), 0 0 0 0 rgba(0, 136, 204, 0.4);
+    }
+    50% {
+        transform: translateY(8px) scale(1.08);
+        box-shadow: 0 0 30px rgba(0, 136, 204, 1), 0 0 0 12px rgba(0, 136, 204, 0);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+        box-shadow: 0 0 10px rgba(0, 136, 204, 0.5), 0 0 0 0 rgba(0, 136, 204, 0);
+    }
+}
+
+.scroll-arrow-btn:hover {
+    transform: scale(1.15);
+    background: linear-gradient(135deg, #006699, #0088cc);
+}
+
+/* Main Heading */
+.main-heading{
+    max-width:760px;
+    margin:0 auto 25px;
+    text-align:center;
+}
+
+.main-heading .small-title{
+    color:#168dcc;
+    font-size:12px;
+    font-weight:900;
+    letter-spacing:2px;
+    margin-bottom:12px;
+}
+
+.main-heading h2{
+    font-size:clamp(32px,5vw,50px);
+    line-height:1.1;
+    letter-spacing:-1.5px;
+    margin-bottom:15px;
+}
+
+.main-heading p{
+    font-size:16px;
+    line-height:1.8;
+    color:#6b7280;
+    max-width:680px;
+    margin:auto;
+}
+
+/* CTA */
+.cta-area{
+    text-align:center;
+    margin:35px auto 65px;
+}
+
+.join-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    min-width:280px;
+    padding:18px 30px;
+    border-radius:15px;
+    text-decoration:none;
+    color:#fff;
+    font-size:16px;
+    font-weight:900;
+    letter-spacing:.3px;
+    background:linear-gradient(135deg,#229ed9,#168dcc);
+    box-shadow:0 14px 35px rgba(34,158,217,.30);
+    transition:.25s ease;
+}
+
+.join-btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 20px 42px rgba(34,158,217,.38);
+}
+
+.arrow{
+    font-size:21px;
+}
+
+.open-text{
+    margin-top:12px;
+    font-size:12px;
+    color:#9ca3af;
+}
+
+/* Features */
+.features-section{
+    padding:0 0 60px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:13px;
+    letter-spacing:2px;
+    font-weight:900;
+    color:#168dcc;
+    margin-bottom:25px;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+.feature{
+    background:rgba(255,255,255,.85);
+    border:1px solid #e7ebf0;
+    border-radius:20px;
+    padding:25px;
+    transition:.25s;
+    box-shadow:0 8px 25px rgba(0,0,0,.04);
+}
+
+.feature:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.icon{
+    width:45px;
+    height:45px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:13px;
+    background:#eaf7fd;
+    color:#168dcc;
+    font-size:21px;
+    margin-bottom:17px;
+}
+
+.feature h3{
+    font-size:17px;
+    margin-bottom:8px;
+}
+
+.feature p{
+    font-size:13px;
+    color:#6b7280;
+    line-height:1.65;
+}
+
+/* Bottom Statement */
+.statement{
+    background:#111827;
+    color:#fff;
+    border-radius:28px;
+    padding:42px 25px;
+    text-align:center;
+    margin-bottom:40px;
+    position:relative;
+    overflow:hidden;
+}
+
+.statement::before{
+    content:"";
+    position:absolute;
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    background:rgba(34,158,217,.18);
+    filter:blur(60px);
+    top:-140px;
+    right:-80px;
+}
+
+.statement h3{
+    position:relative;
+    font-size:23px;
+    line-height:1.7;
+    margin-bottom:18px;
+}
+
+.statement p{
+    position:relative;
+    color:#9ca3af;
+    font-size:13px;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:0 0 30px;
+    color:#9ca3af;
+    font-size:12px;
+    line-height:1.7;
+}
+
+/* Mobile */
+@media(max-width:700px){
+
+    .hero{
+        padding-top:32px;
+    }
+
+    .telegram-logo{
+        width:82px;
+        height:82px;
+        border-radius:24px;
+    }
+
+    .hero h1{
+        letter-spacing:-1px;
+    }
+
+    .features{
+        grid-template-columns:1fr;
+    }
+
+    .feature{
+        padding:22px;
+    }
+
+    .join-btn{
+        width:100%;
+        min-width:0;
+    }
+
+    .statement{
+        border-radius:22px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP -->
+<header class="topbar">
+    <div class="container top-inner">
+        <div class="live">
+            <span class="live-dot"></span>
+            LIVE COMMUNITY
+        </div>
+    </div>
+</header>
+
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+
+        <div class="telegram-logo">
+            <img src="image.png" alt="Telegram Logo">
+        </div>
+
+        <div class="official">
+            ✓ OFFICIAL TELEGRAM CHANNEL
+        </div>
+
+        <h1>
+            𝗧𝗿𝗮𝗱𝗲 𝗪𝗶𝘁𝗵  <span>𝗠𝗼𝗵𝗶𝘁</span>
+        </h1>
+
+        <div class="username">
+            @tradewithnitin
+        </div>
+
+        <div class="members-wrapper">
+            <div class="members">
+                <strong>12K+</strong> Members
+            </div>
+            
+            <a href="#intro-section" class="scroll-arrow-btn" title="Scroll Down">
+                ↓
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- INTRO -->
+<section id="intro-section">
+    <div class="container">
+
+        <div class="main-heading">
+
+            <div class="small-title">
+                READ THE MARKET WITH CLARITY
+            </div>
+
+            <h2>
+                Make Your Next Trade
+                <br>
+                More Informed.
+            </h2>
+
+            <p>
+                Daily market context, practical price-action insights,
+                and educational perspectives on NIFTY &amp; BANK NIFTY —
+                all in one focused Telegram community.
+            </p>
+
+        </div>
+
+
+        <!-- CTA -->
+        <div class="cta-area">
+
+            <a
+                href="https://t.me/+zlAMkmVJ7KszZmQ1"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="join-btn"
+            >
+                REQUEST TO JOIN TELEGRAM
+                <span class="arrow">↗</span>
+            </a>
+
+            <div class="open-text">
+                Opens the Telegram app directly
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FEATURES -->
+<section class="features-section">
+
+    <div class="container">
+
+        <div class="section-title">
+            WHAT YOU GET INSIDE
+        </div>
+
+        <div class="features">
+
+            <div class="feature">
+
+                <div class="icon">📊</div>
+
+                <h3>
+                    Daily NIFTY &amp; BANK NIFTY Analysis
+                </h3>
+
+                <p>
+                    Understand daily market context,
+                    important levels and price movement
+                    with clear explanations.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="icon">📈</div>
+
+                <h3>
+                    Live Market Charts
+                </h3>
+
+                <p>
+                    Chart-based market observations
+                    designed to make price action easier
+                    to understand.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="icon">🎯</div>
+
+                <h3>
+                    Price Action Insights
+                </h3>
+
+                <p>
+                    Learn how market structure and
+                    price action can be interpreted
+                    in different market conditions.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="icon">🧠</div>
+
+                <h3>
+                    Trading Psychology
+                </h3>
+
+                <p>
+                    Practical educational tips for
+                    disciplined and informed
+                    decision-making.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="icon">♧</div>
+
+                <h3>
+                    Private Community
+                </h3>
+
+                <p>
+                    A focused Telegram community
+                    for market discussions and
+                    educational content.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="icon">⚡</div>
+
+                <h3>
+                    Instant Access
+                </h3>
+
+                <p>
+                    Join directly through Telegram
+                    and access the community from
+                    your phone or desktop.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- STATEMENT -->
+<section>
+    <div class="container">
+
+        <div class="statement">
+
+            <h3>
+                ✦ Learn the Setup
+                <br>
+                ✦ Respect the Risk
+                <br>
+                ✦ Trade with a Plan
+            </h3>
+
+            <p>
+                Educational &amp; informational content only.
+                Market activities involve risk.
+                No guaranteed returns or profits are promised.
+            </p>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        © 2026 𝗧𝗿𝗮𝗱𝗲 𝗪𝗶𝘁𝗵 𝗠𝗼𝗵𝗶𝘁 · Official Telegram Community
+    </div>
+</footer>
+
+
+</body>
+</html>
